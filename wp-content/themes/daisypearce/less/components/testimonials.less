@@ -1,0 +1,100 @@
+.praise-carousel {
+    margin-bottom: 80px;
+}
+
+.praise {
+    border: 1px solid @palette-light;
+    border-radius: @border-radius;
+    position: relative;
+    padding: 20px 20px 40px 55px; 
+    margin: 0;
+    height: 100%;
+
+    svg {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        text-align: right;
+    }
+}
+
+.slick-slide + .slick-slide {
+    .praise {
+        margin-left: 18px;
+    }
+}
+
+.slick-dots {
+    bottom: -45px;
+
+    li {
+        height: 5px !important;
+        width: 5px !important;
+        margin: 0 8px;
+
+        &.slick-active {
+            button {
+                background: @palette-light;
+            }
+        }
+    }
+    
+    button {
+        background: transparent;
+        border: 2px solid @palette-light !important;
+        border-radius: 50%;
+        height: 5px !important;
+        width: 5px !important;
+        padding: 2.5px;
+        
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+
+    &:focus {
+        outline: @primary;
+    }
+}
+
+.slick-prev {
+    left: -45px;
+}
+
+.slick-next {
+    right: -45px;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    color: white;
+    width: 34px;
+    height: 34px;
+    transition: color @ani-speed linear;
+
+    &:hover {
+        color: @primary;
+    }
+
+    &:focus {
+        color: @primary;
+    }
+
+    &::before {
+        display: none;
+    }
+}

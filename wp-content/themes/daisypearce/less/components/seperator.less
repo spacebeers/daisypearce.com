@@ -1,0 +1,33 @@
+.flair {
+    position: relative;
+    margin: 40px 0;
+
+    hr {
+        border-top: 1px solid @palette-light;
+        border-bottom: none;
+        margin-top: 1px;
+        margin-left: 48px;
+        top: 1px;
+        position: relative;
+    }   
+    
+    svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -12px;
+    }
+
+    &.flair-right {
+        hr {
+            margin-left: 0;
+            margin-right: 48px;
+        }   
+
+        svg {
+            left: auto;
+            right: -12px;
+            transform: translateY(-50%) scaleX(-1);
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.wpforms-form button[type=submit] {
+    border: 1px solid @palette-light !important;
+    background: transparent !important;
+    text-decoration: none !important;
+    color: @palette-light !important;
+    font-size: 1.6rem !important;
+    padding: 8px 16px !important;
+    font-family: @primary-font !important;
+    border-radius: @border-radius !important;
+    font-weight: 100 !important;
+    float: right !important;
+}
+
+div.wpforms-container-full .wpforms-form input, .wpforms-form textarea {
+    border: none !important;
+    font-size: 1.4rem !important;
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: @palette-light !important;
+        opacity: 1; /* Firefox */
+    }
+    
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: @palette-light !important;
+    }
+    
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: @palette-light !important;
+    }
+}
+
+.wpforms-field-file-upload {
+    label {
+        font-size: 1.4rem !important;
+        font-weight: 100 !important;
+    }
+
+    input {
+        width: 100% !important;
+    }
+}
+
+.wpforms-field-gdpr-checkbox {
+    ul[class] {
+        li.choice-1 {
+            position: relative !important;
+            padding-left: 32px !important;
+
+            input {
+                position: absolute !important;
+                top: 7px !important;
+                left: 0 !important;
+            }
+        }
+    }
+}
+
+.wpforms-required-label {
+    display: none !important;
+}
+
+.wpforms-field-gdpr-checkbox label.wpforms-field-label-inline {
+    font-size: 1.4rem !important;
+}
+
+.contact-block {
+    ul {
+        list-style: none;
+        font-size: 1.8rem;
+        margin-top: 35px;
+    }
+
+    li + li {
+        margin-top: 27px;
+    }
+
+    a {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        justify-items: center;
+        color: @palette-light;
+        text-decoration: none;
+    }
+
+    svg {
+        margin-right: 16px;
+        color: @primary;
+    }
+}
