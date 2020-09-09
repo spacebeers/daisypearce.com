@@ -4,7 +4,7 @@
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<?php include( locate_template( 'template-parts/book-listing.php', false, false ) ); ?>	
 		
-		<div class="flair flair-<?php echo ($count % 2 == 0) ? 'left' : 'right'; ?>">
+		<div class="flair flair-<?php echo ($count % 2 == 0) ? 'right' : 'left'; ?>">
 			<?php echo file_get_contents(get_template_directory() . '/assets/flair.svg', true); ?>
 			<hr />
 		</div>
